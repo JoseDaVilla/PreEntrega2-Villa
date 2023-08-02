@@ -1,0 +1,454 @@
+/*!------ FUENTE --------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+
+}
+
+html{
+    position: relative;
+}
+/*!------- HEADER --------*/
+
+h1{
+    font-size: 45px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #61357E;
+    flex-wrap: wrap;
+    
+    position: sticky;
+    top:  0;
+}
+
+header nav div{
+    display: flex;
+    justify-content: space-between;
+    
+} 
+
+header nav ul li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    padding: 7px;
+    border-radius: 8px;
+}
+
+header nav div ul li a:hover{
+    color: #ffffff;
+    
+}
+
+header nav div img{
+    width: 50px;
+}
+
+header nav ul{
+    list-style:none;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header nav ul li{
+    margin: 20px;
+}
+
+
+
+/*!------- MAIN INDEX--------*/
+
+.button{
+    text-decoration: none;
+    border-radius: 5px;
+    border-color: #964BC7; ;
+    border-style:outset;
+    border-width: 10px;
+    color: black;
+    margin: 10px;
+    padding: 10px;
+    background-color: #D9A9F9;
+}
+
+.button:hover{
+    background-color: black;
+    color: #964BC7;
+    border-color: black;
+}
+
+.book{
+    background-image: url(../img/nube-blanca-sobre-fondo-cielo-azul\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 50px;
+    
+}
+.book h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.book div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.book select{
+    color: rgb(0, 0, 0);
+    background-color: #D9A9F9;
+    flex-direction: row;
+    border-radius: 6px;
+    height: 50px;
+    border-color: rgba(0, 0, 0, 0.74);
+    border-width: 1px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.book input{
+    height: 50px;
+    width: 200px;
+    border-radius: 6px;
+    border-color: rgba(0, 0, 0, 0.74);
+    border-width: 1px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9A9F9;
+    display: flex;
+    flex-wrap: wrap;
+}
+.book div label{
+    margin: 10px;
+}
+
+.optional-services{
+    display:flex;
+    justify-content: center;
+}
+
+.optional-services a{
+    display:inline-flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    color: rgb(0, 0, 0);
+    text-decoration: solid;
+    background-color: #D9A9F9
+    ;
+    
+}
+
+.bundles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.bundles div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin: 25px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color:rgb(255, 255, 255);
+    border: 2px black;
+    border-style: solid;
+    flex-wrap: wrap;
+    width: 350px;
+    
+    
+    
+}
+
+.bundles div p{
+    margin: 20px;
+}
+
+.bundles div a img{
+    width: 100%;
+    height: 300px;
+    border-color: black;
+    margin-bottom: 10px;
+}
+
+.loyalty-2{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    ;
+}
+
+.loyalty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 75%;
+    border: 2px black;
+    border-style: solid;
+}
+
+.loyalty a img{
+    box-sizing:border-box;
+}
+.loyalty div{
+    
+    text-align: center;
+}
+
+.loyalty div h2{
+    padding-bottom: 50px;
+}
+
+/* ------------ */
+
+
+.bags{
+    display: flex;
+    text-align:center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    ;
+}
+
+.bags-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row-reverse;
+    width: 75%;
+    border: 2px black;
+    border-style: solid;
+    margin: 25px;
+}
+
+.bags-1 img{
+    width: 300px;
+    height: 300px;
+}
+.bags-1 div{
+    
+    text-align: center;
+}
+
+.bags-1 div h2{
+    padding-bottom: 50px;
+}
+
+/* MY TRIPS PAGE */
+
+.my-trips{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    background-image: url(../img/nube-blanca-sobre-fondo-cielo-azul\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 20px;
+}
+
+.my-trips div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 80px;
+    margin: 50px;
+    border-radius: 4px;
+    border-color: black;
+    border-style: inset;
+    border-width: 10px;
+    background-color: aliceblue;
+}
+
+.my-trips input{
+    border-radius: 6px;
+    border-color: rgba(0, 0, 0, 0.74);
+    border-width: 1px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    background-color: #D9A9F9;
+}
+.my-trips div p{
+    text-align: center;
+    margin: 30px;
+}
+
+.my-trips div label{
+    margin:10px;
+}
+
+.my-trips div a{
+    margin-top: 30px;
+}
+
+/* CONTACT US PAGE */
+
+.contact-us img{
+    width: 100px;
+
+}
+
+.contact-email img{
+    width: 100px;
+}
+
+/* HELP CENTER PAGE */
+
+.help-center{
+    display:flex ;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.help-center h2{
+    margin: 10px;
+    display: inline-block;
+    text-align: start;
+}
+
+.search-bar{
+    padding: 15px;
+    background-color: #270db961;
+}
+
+.search-bar input{
+    width: 700px;
+    height: 40px;
+    margin: 10px;
+    text-indent: 10px;
+}   
+
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+}
+
+.questions a{
+    text-decoration: none;
+    color:#534bc7;
+}
+
+.questions a:hover{
+    font-size: 16.075px;
+    text-decoration: underline;
+
+}
+
+.questions ul{
+    list-style:circle;
+}
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-columns: 300px 300px 300px;
+    text-align: center;
+}
+
+.grid-container i{
+    color:#534bc7;
+    font-size: 50px;
+}
+
+.grid-container div a{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9A9F9;
+    margin: 15px;
+    border: black 2px solid;
+    text-decoration: none;
+    color: black;
+    padding-bottom: 10px;
+}
+
+.grid-container div a:hover{
+    text-decoration: underline;
+}
+
+.grid-container div a i:hover{
+    color: black;
+    font-size: 51px;
+    
+}
+
+/*!------- FOOTER --------*/
+
+footer{
+    background-color: #5C2F7A;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer h3{
+    color: black;
+}
+
+.footer-list{
+    display: flex;
+    
+}
+
+.footer-list ul{
+    list-style: none;
+    margin-right: 15px;
+}
+
+.footer-list ul li{
+    margin-bottom: 5px;
+}
+.footer-list ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-img{
+    display:flex;
+    align-items: center;
+}
+
+.footer-img a img{
+    margin-right: 10px;
+}
