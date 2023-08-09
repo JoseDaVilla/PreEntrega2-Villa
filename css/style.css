@@ -61,9 +61,6 @@ header nav ul li{
     justify-content: end;
 }
 
-.navbar-expand-xl div h1{
-    
-}
 .navbar-expand-xl div a{
     color:black;
     font-size: 18px;
@@ -97,12 +94,16 @@ header nav ul li{
     width: 200px;
     text-align: center;
     font-weight: 900;
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    
 }
 
 .button-2:hover{
     color:black;
     text-decoration: underline;
     background-color: #d9a9f9c9;
+    
+    
 }
 
 .button{
@@ -132,9 +133,6 @@ h3{
     font-weight: 900;
 }
 
-main{
-
-}
 
 .book{
     background-image: url(../img/nube-blanca-sobre-fondo-cielo-azul\ \(1\).jpg);
@@ -155,6 +153,7 @@ main{
     align-items: center;
     margin: 10px;
     flex-wrap: wrap;
+    
 }
 
 .book select{
@@ -172,6 +171,8 @@ main{
     text-align: center;
     padding: 10px;
     margin: 10px;
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
 }
 
 .book select:hover{
@@ -193,6 +194,8 @@ main{
     display: flex;
     flex-wrap: wrap;
     margin: 10px;
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
 }
 
 .book input:hover{
@@ -206,6 +209,7 @@ main{
 .optional-services{
     display:flex;
     justify-content: center;
+    
 }
 
 .optional-services a:hover{
@@ -224,7 +228,8 @@ main{
     text-decoration: solid;
     background-color: #D9A9F9;
     font-weight: 900;
-    
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
 }
 
 .bundles {
@@ -246,6 +251,8 @@ main{
     background-color:#D9A9F9;
     flex-wrap: wrap;
     width: 450px;
+    box-shadow: 10px 10px 31px -8px rgba(0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 31px -5px rgba(0, 0, 0.75);
 }
 
 .bundles div:hover{
@@ -380,6 +387,7 @@ label{
 .my-trips div p{
     text-align: center;
     margin: 30px;
+    display: block;
 }
 
 .my-trips div label{
@@ -392,6 +400,36 @@ label{
 
 .bundles{
     flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1035px){
+    .my-trips div p{
+        display: none;
+        
+    }
+    .my-trips div h2{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .my-trips div{
+        border: none;
+        text-align: center;
+        background-color: #d8b4f0;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.708) 10px 10px 10px -5px;
+    }
+    .my-trips div p{
+        display: none;
+    }
+    .my-trips div h2{
+        text-align: center;
+    }   
+
+    .my-trips input{
+        background-color: #9046c175;
+    }
 }
 
 /* CONTACT US PAGE */
@@ -501,6 +539,47 @@ label{
 .contact-us-ask ul li:hover{
     background-color: #d097f69f;
 }
+
+.contact-means div p{
+    display: block;
+}
+
+.contact-means div h3{
+    display: block;
+}
+
+@media screen and (max-width: 768px){
+
+    .contact-means div{
+        background-color: #b77ae1;
+        margin: 10px;
+        padding: 5px;
+        border-radius: 10px;
+        box-shadow: black 20px 20px 10px -15px;
+    }
+
+.contact-means div h3{
+    color: black;
+}
+    .contact-means div p{
+        display: none;
+    }
+
+    .contact-us-ask ul{
+        width: 45%;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 515px){
+    .contact-means div h3{
+        display: none;
+    }
+    .contact-us-ask ul{
+        width: 70%;
+    }
+}
 /* HELP CENTER PAGE */
 
 .help-center{
@@ -591,57 +670,6 @@ label{
     
 }
 
-/* FLIGHT STATUS */
-
-.main-status{
-    display: flex;
-    justify-content: center;
-    background-image: url(../img/nube-blanca-sobre-fondo-cielo-azul\ \(1\).jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.flight-status{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 40px;
-    padding: 30px;
-    flex-wrap: wrap;
-    border: black 4px solid;
-    width: 50%;
-    align-items:center ;
-    background-color: white;
-
-}
-
-.flight-status div{
-    margin: 20px;
-}
-.flight-status div input{
-    margin-left: 20px;
-    background-color: #D9A9F9;
-    border:none;
-    width: 200px;
-    height: 50px;
-    text-align: center;
-    color: rgba(0, 0, 0, 0.476);
-    font-weight: 900;
-    border-radius: 7px;
-    
-}
-
-.flight-status div input:hover{
-    border: black 3px solid;
-}
-
-.flight-status a{
-    display:inline ;
-}
-
-/* MEDIA QUERY - HELP CENTER */
 @media screen and (max-width: 946px){
     .search-bar input{
         width: 500px;
@@ -657,6 +685,8 @@ label{
             text-align: center;
     }   
 }
+
+
 
 @media screen and (max-width: 768px){
     .grid-container{
@@ -702,7 +732,7 @@ label{
     }
     
     .search-bar input{
-        width: 500px;
+        width: 400px;
         height: 50px;
         margin: 10px;
         text-indent: 10px;
@@ -744,7 +774,92 @@ label{
         padding: 10px;
         border-radius: 10px;
     }
+    @media screen and (max-width: 700px){
+
+        .search-bar input{
+            width: 300px;
+            height: 50px;
+            margin: 10px;
+            text-indent: 10px;
+            text-align: center;
+        }  
     }
+    }
+
+
+/* FLIGHT STATUS */
+
+.main-status{
+    display: flex;
+    justify-content: center;
+    background-image: url(../img/nube-blanca-sobre-fondo-cielo-azul\ \(1\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.flight-status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 70px;
+    padding: 30px;
+    flex-wrap: wrap;
+    border: black 4px solid;
+    width: 40%;
+    align-items:center ;
+    background-color: white;
+
+}
+
+.flight-status div{
+    margin: 20px;
+    align-items: center;
+    text-align: center;
+}
+.flight-status div input{
+    margin-left: 20px;
+    background-color: #D9A9F9;
+    border:none;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.476);
+    font-weight: 900;
+    border-radius: 7px;
+}
+
+.mytrips{
+    align-self  : center;
+}
+
+.flight-status div input:hover{
+    border: black 3px solid;
+}
+
+.flight-status a{
+    display:inline ;
+}
+
+
+@media screen and (max-width: 946px){
+    .flight-status{
+        text-align: center;
+        text-align: center;
+        background-color: #d8b4f0;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.708) 10px 10px 10px -5px;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .flight-status div input{
+        background-color: #9046c14d;
+    }
+}
+
+/* MEDIA QUERY - HELP CENTER */
 
 
 /*!------- FOOTER --------*/
@@ -801,7 +916,7 @@ footer h3{
     margin-right: 10px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 768px){
 
     footer{
         align-items: center;
