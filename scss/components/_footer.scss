@@ -1,0 +1,40 @@
+footer{
+    background-color: $color-primario;
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    .footer-list{
+        display: flex;
+        ul{
+            list-style: none;
+            li{
+                margin-bottom: 5px;
+                h3{
+                    color: rgb(0, 0, 0);
+                }
+                a{
+                    color: rgb(0, 0, 0);
+                    text-decoration: none;
+                    transition-duration: 0.75s;
+                    &:hover{
+                        text-decoration: underline;
+                        color: white;
+                    }
+                }
+                
+            }
+        }
+    }
+    .footer-img{
+        display:flex;
+        align-items: center;
+        a{
+            i{
+                color: rgb(0, 0, 0);
+                margin-right: 10px;
+                font-size: 40px;
+                display: block;
+            }
+        }
+    }
+}

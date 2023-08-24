@@ -1,3 +1,10 @@
-h2{
-    color: red;
-}
+@import "./base/variables";
+@import "./base/generales";
+@import "./components/header";
+@import "./components/footer";
+@import "./components/index";
+@import "./components/contact-us";
+@import "./components/flight-status";
+@import "./components/help-center";
+@import "./components/my-trips";
+@import "./base/-mediaquerys.scss"

@@ -1,0 +1,55 @@
+.my-trips-main{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.my-trips{
+    display: flex;
+    @extend %flex-center;
+
+    div{
+        display: flex;
+        @extend %flex-center;
+        margin: 50px;
+        padding: 7%;
+        flex-wrap: wrap;
+        border: black 4px solid;
+        align-items:center ;
+        background-color: white;
+        width: 70%;
+        height: 80%;
+        text-align: center;
+        background-color: $color-terciario;
+        border-radius: 20px;
+        box-shadow: rgba(0, 0, 0, 0.708) 10px 10px 10px -5px;
+        border: none;
+        border-radius: 20px;
+
+        p{
+            text-align: center;
+            margin: 30px;
+            display: block;
+        }
+        label{
+            font-weight: nth($font-weight,5);
+            margin:10px;
+        }
+        input{
+            border-radius: 6px;
+            border-color: rgba(0, 0, 0, 0.74);
+            border-width: 1px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: $color-booking;
+            margin-bottom: 10px;
+            width: 70%;
+        }
+        button{
+            align-items: center;
+            margin-left: 0px;
+        }
+    }
+}

@@ -1,0 +1,63 @@
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primario;
+    flex-wrap: wrap;
+    position: sticky;
+    top:  0;
+    
+    nav{
+        .container-fluid{
+            a{
+                .bi-airplane-engines{
+                    font-size: 50px;
+                    color:black;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    padding-bottom: 5px;
+                    border-radius: 100%;
+                    border: black 4px dashed;
+                }
+            }
+            .title{
+                display: flex;
+                flex-direction: column;
+                text-align: end;
+                align-items: end;
+                font-size: 60px;
+                font-family:'Poppins', sans-serif;
+                font-weight: nth($font-weight,5);
+                margin-top: 18px;
+                
+            }
+            div{
+                ul{
+                    li{
+                        margin: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.navbar{
+    background-color: $color-secundario;
+}
+
+.navbar-expand-xl div{
+    display: flex;
+    justify-content: end;
+}
+
+.navbar-expand-xl div a{
+    color:black;
+    font-size: 18px;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in;
+}
+
+.navbar-expand-xl div a:hover{
+    color:white;
+    font-size: 18.2px;
+}

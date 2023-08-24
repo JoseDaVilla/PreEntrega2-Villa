@@ -1,0 +1,172 @@
+.book{
+
+    padding: 50px;
+    h1{
+        font-weight: 900;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        flex-wrap: wrap;
+        label{
+            margin: 10px;
+        }
+        select{
+            color: rgba(0, 0, 0, 0.586);
+            background-color: $color-booking;
+            border:none;
+            flex-direction: row;
+            border-radius: 6px;
+            height: 50px;
+            border-color: rgba(0, 0, 0, 0.74);
+            border-width: 1px;
+            display: flex;
+            flex-wrap: wrap;
+            font-weight: nth($font-weight,5);
+            text-align: center;
+            padding: 10px;
+            margin: 10px;
+            transition-duration: 0.25s;
+            &:hover{
+                box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+            }
+        }
+        input{
+            height: 50px;
+            width: 200px;
+            border-radius: 6px;
+            border-color: rgba(0, 0, 0, 0.74);
+            border-width: 1px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            color: rgba(0, 0, 0, 0.507);
+            background-color:$color-booking;
+            border:none;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 10px;
+            
+            transition-duration: 0.25s;
+            &:hover{
+                box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+            -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0,0.75);
+            }
+            }
+            
+        
+    }
+}
+
+.optional-services{
+    display:flex;
+    justify-content: center;
+    a{
+        display:inline-flex;
+        justify-content: center;
+        align-content: center;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        text-decoration: solid;
+        background-color: $color-booking;
+        font-weight: 900;
+        transition-duration: 0.75s;
+        &:hover{
+            box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75);
+        }
+    }
+}
+
+.bundles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        flex-wrap: wrap;
+        margin: 25px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        color: rgb(0, 0, 0);
+        background-color:$color-booking;
+        width: 450px;
+        
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+        &:hover{
+            box-shadow: 5px 5px 2px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 10px 31px -5px rgba(0, 0, 0, 0.75);
+        width: 452px;
+        }
+        a{
+            img{
+                width: 100%;
+                height: 300px;
+                margin-bottom: 10px;
+            }
+        }
+        p{
+            margin: 20px;
+        }
+    }
+}
+
+
+
+.bags{
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    @include flex(flex,center);
+}
+
+.bags-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 25px;
+    background-color:$color-booking;
+    border-radius: 20px;
+    padding: 20px;
+    transition-duration: 0.75s;
+    &:hover{
+        box-shadow: 5px 5px 2px -8px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 5px 10px 31px -5px rgba(0, 0, 0, 0.75);
+        width: 77%;
+    }
+    div{
+        text-align: center;
+        h2{
+            margin: 20px;
+        }
+    }
+}
+
+.carousel-index{
+    @extend %flex-center;
+}
+
+.carousel{
+    display: flex;
+    align-items: center;
+}
+
+.imgs{
+    width: 300px;
+    border-radius: 40px;
+    margin-bottom: 20px;
+}

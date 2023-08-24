@@ -1,0 +1,96 @@
+.help-center{
+    display:flex ;
+    flex-direction: column  ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    section{
+        h2{
+            margin: 10px;
+            display: inline-block;
+            text-align: start;
+        }
+        .search-bar{
+            padding: 15px;
+            background-color: #270db961;
+            input{
+                width: 700px;
+                height: 40px;
+                margin: 10px;
+                text-indent: 10px;
+            }
+        }
+        .questions{
+            flex-direction: column;
+            margin-top: 20px;
+            justify-content: center;
+            align-items: start;
+            @include flex(flex,start);
+            ul{
+                list-style:circle;
+                li{
+                    a{
+                        text-decoration: none;
+                        color:#534bc7;
+                        transition-duration: 0.75s;
+                        transition-timing-function: ease-in-out;
+                        &:hover{font-size: 16.5px;
+                        text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.grid-container{
+    display: grid;
+    grid-template-rows: 33.3% 33.3% 33.3%;
+    grid-template-columns: 300px 300px 300px;
+    text-align: center;
+    div{
+        a{  
+            display: flex;
+            flex-direction: column;
+            background-color: #D9A9F9;
+            margin: 15px;
+            border: black 2px solid;
+            border-radius: 10px;
+            text-decoration: none;
+            color: black;
+            padding-bottom: 10px;
+            transition-duration: 0.75s;
+            &:hover{
+                text-decoration: underline;
+                background-color: #d9a9f9be;
+            }
+            i{
+                color:#534bc7;
+                font-size: 50px;
+                transition-duration: 0.75s;
+                &:hover{
+                    color:#ffffff97;
+                    font-size: 54px;
+                }
+            }
+        }
+    }
+}
+
+
+
+.grid-galeria{
+    display: flex;
+            flex-direction: column;
+            background-color: #D9A9F9;
+            margin: 15px;
+    div{
+        img{
+            display: flex;
+            flex-direction: column;
+            background-color: #D9A9F9;
+            margin: 15px;
+        }
+    }
+}

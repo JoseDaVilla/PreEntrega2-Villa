@@ -1,0 +1,44 @@
+// VARIABLES!
+
+$color-primario:#964BC7;
+$color-secundario:#9e65c4b6;
+$color-booking:#D9A9F9;
+$color-terciario:#d8b4f0;
+$hover-bg-button:#b77ae1;
+$hover-button:#d097f6;
+
+// LISTAS
+
+$font-weight:
+100
+400
+500
+700
+900;
+
+// MAPAS!
+
+$boton: (
+    bg-boton: $color-booking,
+    border-boton: $color-primario,
+    color-text: black,
+);
+
+// EXTEND!
+
+%flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+// MIXIN 🍕
+
+@mixin flex($flex, $text){
+    display: $flex;
+    text-align: $text;  
+}
+
+
+

@@ -1,0 +1,50 @@
+.main-status{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1517315003714-a071486bd9ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE0fHx8ZW58MHx8fHx8&w=1000&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+.flight-status{
+    display: flex;
+    flex-direction: column;
+    @extend %flex-center;
+    margin: 70px;
+    padding: 7%;
+    flex-wrap: wrap;
+    border: black 4px solid;
+    background-color: white;
+    width: 70%;
+    height: 80%;
+    background-color: $color-terciario;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.708) 10px 10px 10px -5px;
+    border: none;
+    border-radius: 20px;
+    div{
+        margin: 20px;
+        @extend %flex-center;
+        input{
+            margin-left: 20px;
+            background-color: $color-booking;
+            border:none;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.476);
+            font-weight: nth($font-weight,4);
+            border-radius: 7px;
+            transition-duration: 0.5s;
+            &:hover{
+                box-shadow: rgba(0, 0, 0, 0.552) 10px 12px 35px -5px;
+            }
+        }
+    }
+    a{
+        display:inline ;
+    }
+}
