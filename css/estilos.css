@@ -31,6 +31,9 @@ html {
     border-color: #d097f6;
     box-shadow: 10px 10px 31px -8px rgba(0, 0, 0, 0.75); }
 
+h1 {
+  font-weight: 900; }
+
 h2 {
   font-weight: 900; }
 
@@ -53,7 +56,8 @@ header {
   background-color: #964BC7;
   flex-wrap: wrap;
   position: sticky;
-  top: 0; }
+  top: 0;
+  z-index: 1000; }
   header nav .container-fluid a .bi-airplane-engines {
     font-size: 50px;
     color: black;
